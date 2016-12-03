@@ -21,7 +21,7 @@ if [ -e ~/.vimrc ]; then
 	mv ~/.vimrc ./backup/
 fi
 
-if [ -e /.git ]; then
+if [ -e ~/.git ]; then
 	mv ~/.git ./backup/
 fi
 
@@ -34,4 +34,11 @@ ln -s $CUR_PATH/.vim ~/
 ln -s $CUR_PATH/.vimrc ~/
 ln -s $CUR_PATH/.git ~/
 ln -s $CUR_PATH/.bash_profile ~/
+
+# deinその他をインストール
+vim
+
+# YouCompleteMeをインストール
+cd ~/.cache/dein/repos/github.com/Valloric/YouCompleteMe/
+python2 install.py --clang-completer
 
