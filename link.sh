@@ -9,11 +9,25 @@ if [ ! -e backup ]; then
 	mkdir backup
 fi
 
-mv ~/.dein ./backup/
-mv ~/.vim ./backup/
-mv ~/.vimrc ./backup/
-mv ~/.git ./backup/
-mv ~/.bash_profile ./backup/
+if [ -e ~/.cache/dein ]; then
+	mv ~/.cache/dein ./backup/
+fi
+
+if [ -e ~/.vim ]; then
+	mv ~/.vim ./backup/
+fi
+
+if [ -e ~/.vimrc ]; then
+	mv ~/.vimrc ./backup/
+fi
+
+if [ -e /.git ]; then
+	mv ~/.git ./backup/
+fi
+
+if [ -e ~/.bash_profile ]; then
+	mv ~/.bash_profile ./backup/
+fi
 
 # .filesへのリンクを作る
 ln -s $CUR_PATH/dein ~/.cache/dein
