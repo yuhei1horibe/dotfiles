@@ -1,0 +1,12 @@
+# dein itself
+[[plugins]]
+repo	= 'Shougo/dein.vim'
+
+# Color Scheme
+[[plugins]]
+repo	= 'morhetz/gruvbox'
+
+# NERD Tree
+[[plugins]]
+repo	= 'scrooloose/nerdtree'
+
