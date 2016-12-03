@@ -30,7 +30,6 @@ if [ -e ~/.bash_profile ]; then
 fi
 
 # .filesへのリンクを作る
-ln -s $CUR_PATH/dein ~/.cache/dein
 ln -s $CUR_PATH/.vim ~/
 ln -s $CUR_PATH/.vimrc ~/
 ln -s $CUR_PATH/.git ~/
