@@ -16,9 +16,9 @@ mv ~/.git ./backup/
 mv ~/.bash_profile ./backup/
 
 # .filesへのリンクを作る
-echo "ln -s $CUR_PATH/dein ~/.cache/dein"
-echo "ln -s $CUR_PATH/.vim ~/"
-echo "ln -s $CUR_PATH/.vimrc ~/"
-echo "ln -s $CUR_PATH/.git ~/"
-echo "ln -s $CUR_PATH/.bash_profile ~/"
+ln -s $CUR_PATH/dein ~/.cache/dein
+ln -s $CUR_PATH/.vim ~/
+ln -s $CUR_PATH/.vimrc ~/
+ln -s $CUR_PATH/.git ~/
+ln -s $CUR_PATH/.bash_profile ~/
 
