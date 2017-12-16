@@ -10,3 +10,7 @@ repo	= 'morhetz/gruvbox'
 [[plugins]]
 repo	= 'scrooloose/nerdtree'
 
+# DirDiff
+[[plugins]]
+repo	= 'will133/vim-dirdiff'
+

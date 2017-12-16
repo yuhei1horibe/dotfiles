@@ -1,0 +1,15 @@
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[log]
+	decorate = auto
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+

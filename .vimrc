@@ -1,4 +1,5 @@
 set tabstop=4
+set expandtab
 set softtabstop=4
 set shiftwidth=4
 
@@ -45,7 +46,7 @@ if dein#check_install()
 endif
 
 " YouCompleteMe configuration
-let s:rumtimepath = expand('/home/yuhei_mobile/.cache/dein/repos/github.com/Shougo')
+let s:rumtimepath = expand('/home/yuhei/.cache/dein/repos/github.com/Shougo')
 
 " Color scheme
 filetype plugin indent on
@@ -53,6 +54,9 @@ set t_Co=256
 syntax on
 colorscheme gruvbox
 set background=dark
+
+" Key map for NERDTree
+silent! nmap <C-n> :NERDTreeToggle<CR>
 
 
 " neobundle#begin - neobundle#end の間に導入するプラグインを記載します。
