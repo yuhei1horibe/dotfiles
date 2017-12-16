@@ -58,6 +58,12 @@ set background=dark
 " Key map for NERDTree
 silent! nmap <C-n> :NERDTreeToggle<CR>
 
+" Color scheme fix
+if &term =~ '256color'
+    " Disable Background Color Erase (BCE) so that color schemes
+    " work properly when Vim is used inside tmux and GNU screen.
+    set t_ut=
+endif
 
 " neobundle#begin - neobundle#end の間に導入するプラグインを記載します。
 " NeoBundleFetch 'Shougo/neobundle.vim'
