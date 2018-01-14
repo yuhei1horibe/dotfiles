@@ -21,10 +21,6 @@ if [ -e ~/.vimrc ]; then
 	mv ~/.vimrc ./backup/
 fi
 
-if [ -e ~/.git ]; then
-	mv ~/.git ./backup/
-fi
-
 if [ -e ~/.bash_profile ]; then
 	mv ~/.bash_profile ./backup/
 fi
@@ -36,7 +32,6 @@ fi
 # .filesへのリンクを作る
 ln -s $CUR_PATH/.vim ~/
 ln -s $CUR_PATH/.vimrc ~/
-ln -s $CUR_PATH/.git ~/
 ln -s $CUR_PATH/.bash_profile ~/
 ln -s $CUR_PATH/.gitconfig ~/
 
