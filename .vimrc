@@ -5,7 +5,6 @@ set shiftwidth=4
 set number
 set hlsearch
 
-
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
@@ -49,6 +48,11 @@ endif
 
 " YouCompleteMe configuration
 let s:rumtimepath = expand('/home/yuhei/.cache/dein/repos/github.com/Shougo')
+
+" Conque GDB
+let g:ConqueTerm_Color = 2                                                            
+let g:ConqueTerm_CloseOnEnd = 1                                                       
+let g:ConqueTerm_StartMessages = 0
 
 " Color scheme
 filetype plugin indent on

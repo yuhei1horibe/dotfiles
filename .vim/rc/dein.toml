@@ -15,3 +15,7 @@ repo	= 'scrooloose/nerdtree'
 [[plugins]]
 repo	= 'will133/vim-dirdiff'
 
+# Conque GDB
+[[plugins]]
+repo	= 'vim-scripts/Conque-GDB'
+
