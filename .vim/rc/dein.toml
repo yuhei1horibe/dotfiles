@@ -4,7 +4,8 @@ repo	= 'Shougo/dein.vim'
 
 # Color Scheme
 [[plugins]]
-repo	= 'morhetz/gruvbox'
+#repo	= 'morhetz/gruvbox'
+repo	= 'nielsmadan/harlequin'
 
 # NERD Tree
 [[plugins]]
