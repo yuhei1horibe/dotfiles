@@ -19,3 +19,7 @@ repo	= 'will133/vim-dirdiff'
 [[plugins]]
 repo	= 'vim-scripts/Conque-GDB'
 
+# Git-gutter
+[[plugins]]
+repo	= 'airblade/vim-gitgutter'
+
