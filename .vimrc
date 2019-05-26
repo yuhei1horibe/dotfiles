@@ -2,6 +2,7 @@ set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+set number
 
 
 " プラグインが実際にインストールされるディレクトリ
@@ -63,6 +64,18 @@ if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
+endif
+
+" The Silver Searcher
+if executable('ag')
+    " Use ag over grep
+    set grepprg=ag\ --nogroup\ --nocolor\ --vimgrep
+
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
 endif
 
 " neobundle#begin - neobundle#end の間に導入するプラグインを記載します。

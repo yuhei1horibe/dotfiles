@@ -14,3 +14,11 @@ repo	= 'scrooloose/nerdtree'
 [[plugins]]
 repo	= 'will133/vim-dirdiff'
 
+# SystemVerilog Syntax
+[[plugins]]
+repo	= 'nachumk/systemverilog.vim'
+
+# git-gutter
+[[plugins]]
+repo	= 'airblade/vim-gitgutter'
+
