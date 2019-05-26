@@ -3,7 +3,7 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set number
-
+set hlsearch
 
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
@@ -11,7 +11,7 @@ let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if &compatible
-	set nocompatible
+    set nocompatible
 endif
 
 " dein.vim がなければ github から落としてくる
@@ -19,7 +19,7 @@ endif
   if !isdirectory(s:dein_repo_dir)
     execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
   endif
-	execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+    execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 " endif
 
 " 設定開始
@@ -49,12 +49,21 @@ endif
 " YouCompleteMe configuration
 let s:rumtimepath = expand('/home/yuhei/.cache/dein/repos/github.com/Shougo')
 
+" Conque GDB
+let g:ConqueTerm_Color = 2                                                            
+let g:ConqueTerm_CloseOnEnd = 1                                                       
+let g:ConqueTerm_StartMessages = 0
+
+" vim-gitgutter
+let g:gitgutter_terminal_reports_focus=0
+
 " Color scheme
 filetype plugin indent on
 set t_Co=256
-syntax on
-colorscheme gruvbox
 set background=dark
+syntax on
+" colorscheme gruvbox
+colorscheme harlequin
 
 " Key map for NERDTree
 silent! nmap <C-n> :NERDTreeToggle<CR>
