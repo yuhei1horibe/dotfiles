@@ -6,12 +6,13 @@ if [ -e ./backup ]; then
 	rm ~/.vimrc
 	rm ~/.bash_profile
     rm ~/.gitconfig
+    rm ~/.tmux.conf
 
 	mv ./backup/dein ~/.cache/
 	mv ./backup/.vim ~/
 	mv ./backup/.vimrc ~/
 	mv ./backup/.bash_profile ~/
-    mv ./.gitconfig ~/
+    mv ./.tmux.conf ~/
 
 	rm -rf ./backup
 fi
