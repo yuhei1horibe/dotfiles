@@ -33,11 +33,16 @@ if [ -e ~/.gitconfig ]; then
 	mv ~/.gitconfig ./backup/
 fi
 
+if [ -e ~/.tmux.conf ]; then
+	mv ~/.tmux.conf ./backup/
+fi
+
 # .filesへのリンクを作る
 ln -s $CUR_PATH/.vim ~/
 ln -s $CUR_PATH/.vimrc ~/
 ln -s $CUR_PATH/.bash_profile ~/
 ln -s $CUR_PATH/.gitconfig ~/
+ln -s $CUR_PATH/.tmux.conf ~/
 
 # deinその他をインストール
 vim

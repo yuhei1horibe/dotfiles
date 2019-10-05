@@ -75,3 +75,33 @@ if &term =~ '256color'
     set t_ut=
 endif
 
+" The Silver Searcher
+if executable('ag')
+    " Use ag over grep
+    set grepprg=ag\ --nogroup\ --nocolor\ --vimgrep
+
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
+endif
+
+" neobundle#begin - neobundle#end の間に導入するプラグインを記載します。
+" NeoBundleFetch 'Shougo/neobundle.vim'
+" ↓こんな感じが基本の書き方
+
+" C++用カラースキーマ
+" NeoBundle 'morhetz/gruvbox'
+
+" NERDTree
+" NeoBundle 'scrooloose/nerdtree'
+
+" Unite
+" NeoBundle 'Shougo/unite.vim'
+" let g:unite_enable_start_insert=1
+
+" YouCompleteMe
+" NeoBundle 'Valloric/YouCompleteMe'
+" let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/cpp/ycm/.ycm_extra_conf.py'
+

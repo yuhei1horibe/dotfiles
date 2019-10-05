@@ -15,6 +15,10 @@ repo	= 'scrooloose/nerdtree'
 [[plugins]]
 repo	= 'will133/vim-dirdiff'
 
+# SystemVerilog Syntax
+[[plugins]]
+repo	= 'nachumk/systemverilog.vim'
+
 # Conque GDB
 [[plugins]]
 repo	= 'vim-scripts/Conque-GDB'

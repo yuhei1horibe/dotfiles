@@ -7,6 +7,7 @@ if [ -e ./backup ]; then
 	rm ~/.bash_profile
 	rm ~/.bashrc
     rm ~/.gitconfig
+    rm ~/.tmux.conf
 
 	mv ./backup/dein ~/.cache/
 	mv ./backup/.vim ~/
@@ -14,6 +15,7 @@ if [ -e ./backup ]; then
 	mv ./backup/.bash_profile ~/
 	mv ./backup/.bashrc ~/
     mv ./.gitconfig ~/
+    mv ./.tmux.conf ~/
 
 	rm -rf ./backup
 fi
