@@ -21,6 +21,10 @@ if [ -e ~/.vimrc ]; then
 	mv ~/.vimrc ./backup/
 fi
 
+if [ -e ~/.bashrc ]; then
+	mv ~/.bashrc ./backup/
+fi
+
 if [ -e ~/.bash_profile ]; then
 	mv ~/.bash_profile ./backup/
 fi
