@@ -27,3 +27,7 @@ repo	= 'vim-scripts/Conque-GDB'
 [[plugins]]
 repo	= 'airblade/vim-gitgutter'
 
+# ctrlp
+[[plugins]]
+repo	= 'kien/ctrlp.vim'
+
