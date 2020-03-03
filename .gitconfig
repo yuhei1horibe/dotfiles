@@ -13,3 +13,6 @@
   ui = true
   pager = true
 
+[user]
+	name = Yuhei Horibe
+	email = yuhei1.horibe@gmail.com

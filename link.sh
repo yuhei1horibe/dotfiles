@@ -40,6 +40,7 @@ fi
 # .filesへのリンクを作る
 ln -s $CUR_PATH/.vim ~/
 ln -s $CUR_PATH/.vimrc ~/
+ln -s $CUR_PATH/.bashrc ~/
 ln -s $CUR_PATH/.bash_profile ~/
 ln -s $CUR_PATH/.gitconfig ~/
 ln -s $CUR_PATH/.tmux.conf ~/

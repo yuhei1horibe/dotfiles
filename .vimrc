@@ -50,12 +50,16 @@ endif
 let s:rumtimepath = expand('/home/yuhei/.cache/dein/repos/github.com/Shougo')
 
 " Conque GDB
-let g:ConqueTerm_Color = 2                                                            
-let g:ConqueTerm_CloseOnEnd = 1                                                       
+let g:ConqueTerm_Color = 2
+let g:ConqueTerm_CloseOnEnd = 1
 let g:ConqueTerm_StartMessages = 0
 
 " vim-gitgutter
 let g:gitgutter_terminal_reports_focus=0
+
+" YouCompleteMe
+"let g:ycm_clangd_uses_ycmd_caching = 0
+"let g:ycm_clangd_binary_path = exepath("clangd")
 
 " Color scheme
 filetype plugin indent on
@@ -75,17 +79,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-" The Silver Searcher
-if executable('ag')
-    " Use ag over grep
-    set grepprg=ag\ --nogroup\ --nocolor\ --vimgrep
-
-    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-    " ag is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching = 0
-endif
+silent! nmap <C-p> :FZF<CR>
 
 " neobundle#begin - neobundle#end の間に導入するプラグインを記載します。
 " NeoBundleFetch 'Shougo/neobundle.vim'

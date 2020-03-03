@@ -27,7 +27,16 @@ repo	= 'vim-scripts/Conque-GDB'
 [[plugins]]
 repo	= 'airblade/vim-gitgutter'
 
-# ctrlp
+# YouCompleteMe
 [[plugins]]
-repo	= 'kien/ctrlp.vim'
+repo    = 'ycm-core/YouCompleteMe'
+build   = 'python3 install.py --clang-completer'
+
+# fzf
+[[plugins]]
+repo	= 'junegunn/fzf'
+build   = './install --all'
+
+[[plugins]]
+repo	= 'junegunn/fzf.vim'
 
