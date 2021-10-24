@@ -20,17 +20,17 @@ repo	= 'will133/vim-dirdiff'
 repo	= 'nachumk/systemverilog.vim'
 
 # Conque GDB
-[[plugins]]
-repo	= 'vim-scripts/Conque-GDB'
+#[[plugins]]
+#repo	= 'vim-scripts/Conque-GDB'
 
 # Git-gutter
 [[plugins]]
 repo	= 'airblade/vim-gitgutter'
 
 # YouCompleteMe
-[[plugins]]
-repo    = 'ycm-core/YouCompleteMe'
-build   = 'python3 install.py --clang-completer'
+#[[plugins]]
+#repo    = 'ycm-core/YouCompleteMe'
+#build   = 'python3 install.py --clang-completer'
 
 # fzf
 [[plugins]]

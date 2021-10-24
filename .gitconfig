@@ -16,3 +16,5 @@
 [user]
 	name = Yuhei Horibe
 	email = yuhei1.horibe@gmail.com
+[core]
+	editor = vim
