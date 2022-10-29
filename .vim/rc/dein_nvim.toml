@@ -17,3 +17,6 @@ repo	= 'hrsh7th/cmp-vsnip'
 [[plugins]]
 repo	= 'hrsh7th/vim-vsnip'
 
+[[plugins]]
+repo	= 'windwp/nvim-autopairs'
+
